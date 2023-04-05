@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <ToggleButton
+        android:id="@+id/toggleBtnTopla"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="12dp"
+        android:background="#F85006"
+        android:textColor="#000000"
+        android:textOff="AÇ"
+        android:textOn="KAPAT"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTopla" />
+
+    <TextView
+        android:id="@+id/txtCarp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ÇARPMA"
+        android:textColor="#F85006"
+        android:textSize="17sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/toggleBtnCarp"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="@+id/toggleBtnCarp"
+        app:layout_constraintTop_toTopOf="@+id/txtTopla" />
+
+    <ToggleButton
+        android:id="@+id/toggleBtnCarp"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:background="#F85006"
+        android:textColor="#000000"
+        android:textOff="AÇ"
+        android:textOn="KAPAT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toggleBtnTopla" />
+
+    <TextView
+        android:id="@+id/txtBolme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="BÖLME"
+        android:textColor="#F85006"
+        android:textSize="17sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/toggleBtnBolme"
+        app:layout_constraintStart_toStartOf="@+id/toggleBtnBolme"
+        app:layout_constraintTop_toBottomOf="@+id/toggleBtnTopla" />
+
+    <ToggleButton
+        android:id="@+id/toggleBtnBolme"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="15dp"
+        android:background="#F85006"
+        android:textColor="#000000"
+        android:textOff="AÇ"
+        android:textOn="KAPAT"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBolme" />
+
+    <TextView
+        android:id="@+id/txtFark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ÇIKARMA"
+        android:textColor="#F85006"
+        android:textSize="17sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/toggleBtnFark"
+        app:layout_constraintStart_toStartOf="@+id/toggleBtnFark"
+        app:layout_constraintTop_toTopOf="@+id/txtBolme" />
+
+    <ToggleButton
+        android:id="@+id/toggleBtnFark"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:background="#F85006"
+        android:textColor="#000000"
+        android:textOff="AÇ"
+        android:textOn="KAPAT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toggleBtnBolme" />
+
+    <TextView
+        android:id="@+id/txtSoru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="SORU"
+        android:textColor="#F85006"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toggleBtnBolme" />
+
+    <EditText
+        android:id="@+id/editTxtTahmin"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="#F85006"
+        android:ems="10"
+        android:hint="TAHMİN DEĞERİNİ GİRİNİZ"
+        android:inputType="numberSigned|textPersonName"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSoru" />
+
+    <Button
+        android:id="@+id/btnSoruGetir"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:background="#0025DD"
+        android:onClick="btnClick"
+        android:text="SORU GETİR"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtTahmin" />
+
+    <Button
+        android:id="@+id/btnTahmindeBulun"
+        android:layout_width="170dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="25dp"
+        android:background="#E9ECA0"
+        android:onClick="btnClick"
+        android:text="TAHMİNDE BULUN"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnSoruGetir" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:minHeight="48dp"
+        android:text="MÜZİK "
+        android:textColor="#F85006"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtCarp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTopla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:text="TOPLAMA"
+        android:textColor="#F85006"
+        android:textSize="17sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/toggleBtnTopla"
+        app:layout_constraintStart_toStartOf="@+id/toggleBtnTopla"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

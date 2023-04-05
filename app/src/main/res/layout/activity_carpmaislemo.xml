@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".carpmaislemoActivity">
+
+    <ToggleButton
+        android:id="@+id/toggleBtnCo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:background="#F85006"
+        android:text="ToggleButton"
+        android:textColor="#000000"
+        android:textOff="BAŞLA"
+        android:textOn="ÇIKIŞ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTahmindeBulunCo" />
+
+    <TextView
+        android:id="@+id/txtSoruCo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="SORU"
+        android:textColor="#F85006"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textViewCo"
+        app:layout_constraintStart_toStartOf="@+id/textViewCo"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCo" />
+
+    <Button
+        android:id="@+id/btnTahmindeBulunCo"
+        android:layout_width="170dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="16dp"
+        android:background="#E9ECA0"
+        android:onClick="btnClickB"
+        android:text="TAHMİNDE BULUN"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtTahminCo" />
+
+    <EditText
+        android:id="@+id/editTxtTahminCo"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:background="#F85006"
+        android:ems="10"
+        android:hint="TAHMİN DEĞERİNİ GİRİNİZ"
+        android:inputType="numberSigned|textPersonName"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSoruCo" />
+
+    <TextView
+        android:id="@+id/textViewCo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Hoş Geldin"
+        android:textColor="#F85006"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSoruGetirCo"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:background="#0025DD"
+        android:onClick="btnClickB"
+        android:text="SORU GETİR"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnTahmindeBulunCo" />
+</androidx.constraintlayout.widget.ConstraintLayout>

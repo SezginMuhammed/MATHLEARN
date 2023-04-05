@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".cikarmaislemActivity">
+
+    <EditText
+        android:id="@+id/editTxtTahminF"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:background="#F85006"
+        android:ems="10"
+        android:hint="TAHMİN DEĞERİNİ GİRİNİZ"
+        android:inputType="numberSigned|textPersonName"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSoruF" />
+
+    <TextView
+        android:id="@+id/textViewF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Hoş Geldin"
+        android:textColor="#F85006"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtSoruF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="SORU"
+        android:textColor="#F85006"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textViewF"
+        app:layout_constraintStart_toStartOf="@+id/textViewF"
+        app:layout_constraintTop_toBottomOf="@+id/textViewF" />
+
+    <Button
+        android:id="@+id/btnSoruGetirF"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:background="#0025DD"
+        android:onClick="btnClickS"
+        android:text="SORU GETİR"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnTahmindeBulunF" />
+
+    <Button
+        android:id="@+id/btnTahmindeBulunF"
+        android:layout_width="170dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="24dp"
+        android:background="#E9ECA0"
+        android:onClick="btnClickS"
+        android:text="TAHMİNDE BULUN"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtTahminF" />
+
+    <ToggleButton
+        android:id="@+id/toggleBtnF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:background="#F85006"
+        android:text="ToggleButton"
+        android:textColor="#000000"
+        android:textOff="BAŞLA"
+        android:textOn="ÇIKIŞ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTahmindeBulunF" />
+</androidx.constraintlayout.widget.ConstraintLayout>
